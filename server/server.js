@@ -43,6 +43,10 @@ app.use(
   })
 );
 
+app.get("/", (req, res) => {
+  res.json("Hello");
+});
+
 app.use(cookieParser());
 app.use(express.json());
 
